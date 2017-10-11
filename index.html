@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Topic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="bootstrap/bootstrap-theme.css">
+
+	<link rel="stylesheet" href="components/slick-master/slick/slick.css">
+	<link rel="stylesheet" href="components/slick-master/slick/slick-theme.css">
+
+	<link rel="stylesheet" href="css/_index/main.css">
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="wrapper">
+	<div class="container-bg">
+		<header class="header">
+			<img class="main-logo" src="img/logo.png" alt="logo">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="header__left">
+							<form class="form">
+								<div class="form-group">
+									<div class="form-select" style="width: 100%;">
+										<!--<img class="arr2" src="img/earth-globe.png" id="changeImg" alt="стрелка">-->
+										<i class="aw-globe awesome fa fa-globe" aria-hidden="true"></i>
+											<div class="form-after">
+												<img src="img/arrow-down.jpg" alt="down">
+											</div>
+										<select class="form-control" onchange="changeImage(this.value, 'changeImg')">
+											<option value="Москва" selected disabled>РУССКИЙ</option>
+											<option value="Москва">Москва</option>
+											<option value="Москва">Осло</option>
+											<option value="Москва">Пекин</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="form-select" style="width: 100%;">
+										<!--<img class="arr" src="img/arrow.png" id="changeImg" alt="стрелка">-->
+										<i class="awesome aw-arrow fa fa-map-marker" aria-hidden="true"></i>
+											<div class="form-after">
+												<img src="img/arrow-down.jpg" alt="down">
+											</div>
+										<select class="form-control" onchange="changeImage(this.value, 'changeImg')">
+											<option value="Москва" selected disabled>ВАШ ГОРОД</option>
+											<option value="Москва">Москва</option>
+											<option value="Москва">Осло</option>
+											<option value="Москва">Пекин</option>
+										</select>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-6 right text-right">
+						<div class="header__right">
+							<div class="socials">
+								<ul class="social__list">
+									<li>
+										<a href="#">
+											<div class="social insta">
+											<img src="img/svg/insta.svg" alt="">
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="social tw">
+												<img src="img/svg/tw.svg" alt="">
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="social facebook">
+											<img src="img/svg/face.svg" alt="">
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="social skype">
+											<img src="img/svg/skype.svg" alt="">
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<a class="register-link" href="#">
+								<div class="register">
+									Вход/Регистрация
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="menu">
+			<div class="container">
+				<div class="row">
+					<div class="navbar-container col-xs-12">
+						<nav class="navbar-desktop navbar navbar-default">
+							<div class="navbar-header navbar-but">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu2">
+									<span class="sr-only">Navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="collapse navbar-collapse" id="menu2">
+								<ul class="nav navbar-nav background">
+									<li class="active">
+										<a href="index.html">Главная</a>
+									</li>
+									<li>
+										<a href="#">Фирмы</a>
+									</li>
+									<li>
+										<a href="#">Объявления</a>
+									</li>
+									<li>
+										<a href="#">Работа</a>
+									</li>
+									<li>
+										<a href="#">Авто</a>
+									</li>
+									<li>
+										<a href="property.html">Недвижимость</a>
+									</li>
+									<li>
+										<a href="#">База отдыха</a>
+									</li>
+									<li>
+										<a href="meeting.html">Знакомства</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-options">
+			<div class="container">
+				<div class="row">
+					<form>
+						<div class="form-group header-content col-xs-12 col-sm-12">
+							<div class="form-select abs-categ">
+								<div class="form-after options">
+									<img src="img/arrow-down.jpg" alt="down">
+								</div>
+								<div class="select select-changer">
+									<span>Категории</span>
+									<select class="ghostSelect form-control categories tema">
+										<option value="Москва" selected disabled>КАТЕГОРИИ</option>
+										<option value="Москва">Москва</option>
+										<option value="Москва">Осло</option>
+										<option value="Москва">Пекин</option>
+									</select>
+								</div>
+						</div>
+						<div class="form-select abs-categ2">
+								<div class="form-after options options-tematic">
+									<img src="img/arrow-down.jpg" alt="down">
+								</div>
+								<div class="select select-changer podcat"><span>ПОДКАТЕГОРИИ</span>
+									<select class="ghostSelect form-control categories tematic">
+										<option value="Москва" selected disabled>ПОДКАТЕГОРИИ</option>
+										<option value="Москва">Москва</option>
+										<option value="Москва">Осло</option>
+										<option value="Москва">Пекин</option>
+									</select>
+								</div>
+						</div>
+						<div class="search-block">
+							<input class="search" type="text" placeholder='Поиск, например "Ночной Клуб"'>
+							<button class="cancel" onclick="javascript: return false;">
+							<i class="fa fa-times" aria-hidden="true"></i>
+							</button>
+							<button class="opt" onclick="javascript: return false;">
+							<i class="fa fa-random" aria-hidden="true"></i>
+							</button>
+							<button class="loop" onclick="javascript: return false;">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							</button>
+						</div>
+						<a href="#" class="add" >
+							<span class="add-text">Добавить объявление</span>
+						<!--	<span class="add-img">
+								<img src="img/add.png" alt="add">
+							</span> -->
+						</a>
+						<nav class="navbar-mobile navbar navbar-default">
+								<div class="navbar-header navbar-but">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+										<span class="sr-only">Navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								<div class="collapse navbar-collapse" id="menu">
+									<ul class="nav navbar-nav background">
+										<li class="active">
+											<a href="index.html">Главная</a>
+										</li>
+										<li>
+											<a href="#">Фирмы</a>
+										</li>
+										<li>
+											<a href="#">Объявления</a>
+										</li>
+										<li>
+											<a href="#">Работа</a>
+										</li>
+										<li>
+											<a href="#">Авто</a>
+										</li>
+										<li>
+											<a href="property.html">Недвижимость</a>
+										</li>
+										<li>
+											<a href="#">База отдыха</a>
+										</li>
+										<li>
+											<a href="meeting.html">Знакомства</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider">
+
+			<div class="slide-item">
+				<div class="row">
+					<div class="col-xs-6 col-md-7 nopad">
+						<div class="slide-img round">
+							<img class="slid" src="img/slider/slider.png" alt="Слайдер">
+							<img src="img/karven.png" alt="karven">
+							<div class="number">
+								+996 312 512095
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-5 nopad">
+						<div class="slide-desc text-center">
+							<div class="slide-title">
+								Топ лучших
+							</div>
+							<div class="slide-title2">
+								<span class="factories">редприятий</span>
+							</div>
+							<div class="slide-title3">
+								Вашего города
+							</div>
+							<div class="slide-adverse text-right">
+								Рекламный сайт <span>№1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide-item">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 nopad">
+						<div class="slide-img">
+						<img class="slid" src="img/slider/2.jpg" alt="Слайдер">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide-item">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 nopad">
+						<div class="slide-img">
+						<img class="slid" src="img/slider/3.jpg" alt="Слайдер">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide-item">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 nopad">
+						<div class="slide-img">
+						<img class="slid" src="img/slider/4.jpg" alt="Слайдер">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide-item">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 nopad">
+						<div class="slide-img">
+						<img class="slid" src="img/slider/5.jpg" alt="Слайдер">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="slider-bottom first">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-3 col-md-offset-9">
+						<div class="adv text-right">На правах рекламы</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="ad">
+			<div class="container">
+				<div class="row">
+					<h3 class="text-center">
+						Разделы объявлений
+					</h3>
+				</div>
+				<div class="ads">
+					<div class="row">
+						<div class="col-xs-12 ads-pad">
+							<div class="block-width col-xs-6 col-sm-4 add-pad">
+								<a href="#"><div class="ad__block">
+										<div class="ad__block-img text-center">
+											<img src="img/pic1.png" alt="Коллаж">
+										</div>
+										<div class="ad__block-text text-center">
+											Карта фирм
+										</div>
+										<div class="ad__block-hover text-center">
+											<div>Магазины</div>
+											<div>Офисы</div>
+											<div>Ночные клубы</div>
+										</div>
+									</div></a>
+							</div>
+							<div class="block-width col-xs-6 col-sm-4 add-pad">
+								<a href="#"><div class="ad__block">
+										<div class="ad__block-img text-center">
+											<img src="img/pic2.png" alt="Коллаж">
+										</div>
+										<div class="ad__block-text text-center">
+											Купи / продай
+										</div>
+										<div class="ad__block-hover text-center">
+											<div>Телефоны TV</div>
+											<div>Мебель Техника</div>
+											<div>Все для дома</div>
+										</div>
+									</div></a>
+							</div>
+							<div class="block-width col-xs-6 col-sm-4 add-pad">
+								<a href="#"><div class="ad__block">
+										<div class="ad__block-img text-center">
+											<img src="img/pic3.png" alt="Коллаж">
+										</div>
+										<div class="ad__block-text text-center">
+											Работа / Услуги
+										</div>
+										<div class="ad__block-hover text-center">
+											<div>Ищу работу</div>
+											<div>Ищу сотрудников</div>
+											<div>Биржа труда</div>
+										</div>
+									</div></a>
+							</div>
+							
+							<div class="block-width col-xs-6 col-sm-4 add-pad">
+								<a href="#"><div class="ad__block">
+										<div class="ad__block-img text-center">
+											<img src="img/pic4.png" alt="Коллаж">
+										</div>
+										<div class="ad__block-text text-center">
+											Транспорт
+										</div>
+										<div class="ad__block-hover text-center">
+											<div>Легковой</div>
+											<div>Водный</div>
+											<div>Воздушный</div>
+										</div>
+									</div></a>
+							</div>
+							<div class="img-full block-width col-xs-6 col-sm-4 add-pad">
+								<a href="property.html">
+									<div class="ad__block">
+										<div class=" ad__block-img text-center">
+											<img style="padding-right: 15px;" src="img/pic5.png" alt="Коллаж">
+										</div>
+										<div class="ad__block-text text-center">
+											Недвижимость
+										</div>
+										<div class="ad__block-hover text-center">
+											<div>Продать</div>
+											<div>Купить</div>
+											<div>Сдать - Снять</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="img-full block-width col-xs-6 col-sm-4 add-pad">
+								<a href="#">
+									<div class="ad__block">
+										<div class="ad__block-img text-center">
+											<img src="img/pic6.png" alt="Коллаж">
+										</div>
+										<div class="ad__block-text text-center">
+											Места отдыха
+										</div>
+										<div class="ad__block-hover text-center">
+											<div>Базы отдыха</div>
+											<div>Охота - Рыбалка</div>
+											<div>Пансионаты</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="block-width col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+								<a href="#">
+									<div class="ad__block last">
+										<div class="ad__block-img text-center">
+											<img src="img/pic7.png" alt="Коллаж">
+										</div>
+										<div class="ad__block-text text-center">
+											Знакомства
+										</div>
+										<div class="ad__block-hover text-center">
+											<div>Флирт</div>
+											<div>Общение</div>
+											<div>Романтика</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="vip-ad">
+			<div class="container">
+				<div class="row">
+					<h3 class="text-center">
+						VIP Объявления
+					</h3>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 add-pad">
+						<div class="slider2">
+						
+							<div class="slide-item">
+								<a href="#"><img src="img/vip/1.png" alt="Изображение"></a>
+							</div>
+							<div class="slide-item">
+								<a href="#"><img src="img/vip/2.png" alt="Изображение"></a>
+							</div>
+							<div class="slide-item">
+								<a href="#"><img src="img/vip/3.jpg" alt="Изображение"></a>
+							</div>
+							<div class="slide-item">
+								<a href="#"><img src="img/vip/4.jpg" alt="Изображение"></a>
+							</div>
+							<div class="slide-item">
+								<a href="#"><img src="img/vip/5.jpg" alt="Изображение"></a>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="slider-bottom first">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-3 col-md-offset-9">
+						<div class="adv text-right">На правах рекламы</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3 class="text-center">
+							Топ организации города
+						</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 add-pad">
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Сауны / Бани / Бассейны</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item2.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Гостиницы / Отели / Хостелы</div>
+										</div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item3.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Бильярд / Караоке</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item4.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Салоны красоты</div></div>
+									</div>
+								</div></a>
+						</div>
+						
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item5.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Реклама / Полиграфия</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item6.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Банки / Кредиты / Ломбарды</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item7.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Доставка еды и продуктов</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item8.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Юридические услуги</div></div>
+									</div>
+								</div></a>
+						</div>
+						
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item9.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">СТО</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item10.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Клиники <br> и стоматологии</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item11.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Бутики</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item12.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Рестораны / Кафе / Фастфуд</div></div>
+									</div>
+								</div></a>
+						</div>
+						
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item13.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Перевозки</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item14.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Туры / Путевки / Отдых</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item15.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Спорт и фитнес</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item16.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Охрана</div></div>
+									</div>
+								</div></a>
+						</div>
+						
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item17.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Детское</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item18.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Организация праздников</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item19.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Строительство / Ремонт</div></div>
+									</div>
+								</div></a>
+						</div>
+						<div class="col-sm-3 col-xs-4 add-pad">
+							<a href="#"><div class="top-item">
+									<div class="top-item_img">
+										<img src="img/item19.png" alt="Коллаж">
+									</div>
+									<div class="top-item_text text-center">
+										<div class="top-desc"><div class="top-text">Строительство / Ремонт</div></div>
+									</div>
+								</div></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3 class="text-center">
+							Наши Партнеры
+						</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="partners__slider">
+							<div class="partner-slide">
+								<img src="img/partner.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner2.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner3.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner4.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner5.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner6.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner7.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner8.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner2.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner3.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner4.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner5.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner6.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner7.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner8.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner2.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner3.png" alt="Партнеры">
+							</div>
+							<div class="partner-slide">
+								<img src="img/partner4.png" alt="Партнеры">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="button-block">
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<a href="" class="all-partners">Все партнеры</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="why">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3 class="text-center">
+						Почему <span>100%</span> жителей выбирают нас
+					</h3>
+				</div>
+			</div>
+			<div class="reasons">
+				<div class="row">
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+						<div class="row">
+								<ul class="reason_list">
+								
+									<li class="reason_item">
+										<div class="r-img">
+											<img src="img/svg/icon.svg" alt="иконка">
+										</div>
+										<div class="r-block">
+											
+										</div>
+										<div class="r-text">
+											100% жителей советуют нас
+										</div>
+									</li>
+								
+									<li class="reason_item">
+										<div class="r-text">
+											У нас только те, кого советуете вы и ваши друзья
+										</div>
+										<div class="r-block">
+											
+										</div>
+										<div class="r-img">
+											100%
+										</div>
+									</li>
+								
+									<li class="reason_item">
+										<div class="r-img">
+											<img src="img/svg/icon3.svg" alt="иконка">
+										</div>
+										<div class="r-block">
+											
+										</div>
+										<div class="r-text">
+											Мы ежедневно дарим призы и подарки
+										</div>
+									</li>
+								
+									<li class="reason_item">
+										<div class="r-text">
+											 У нас более 10000 лучших предприятий страны
+										</div>
+										<div class="r-block">
+											
+										</div>
+										<div class="r-img">
+											<img src="img/svg/icon4.svg" alt="иконка">
+										</div>
+									</li>
+								
+									<li class="reason_item">
+										<div class="r-img">
+											<img src="img/svg/icon5.svg" alt="иконка">
+										</div>
+										<div class="r-block">
+											
+										</div>
+										<div class="r-text">
+											У нас есть все, что <br> вам нужно
+										</div>
+									</li>
+								
+									<li class="reason_item">
+										<div class="r-text">
+											 Простота использования в удобстве превосходит даже кирпич
+										</div>
+										<div class="r-block">
+											
+										</div>
+										<div class="r-img">
+											<img src="img/svg/icon6.svg" alt="иконка">
+										</div>
+									</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cities">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3 class="text-center">
+							Объявления по городам
+						</h3>
+					</div>
+				</div>
+				<div class="row cities-row">
+					<div class="col-sm-3 col-xs-6">
+						<ul class="cities_list">
+							<li class="city">
+								<a href="#">Балыкчы</a>
+							</li>
+							<li class="city">
+								<a href="#">Бишкек</a>
+							</li>
+							<li class="city">
+								<a href="#">Джалал-Абад</a>
+							</li>
+							<li class="city">
+								<a href="#">Кант</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<ul class="cities_list">
+							<li class="city">
+								<a href="#">Каракол</a>
+							</li>
+							<li class="city">
+								<a href="#">Кара-Балта</a>
+							</li>
+							<li class="city">
+								<a href="#">Нарын</a>
+							</li>
+							<li class="city">
+								<a href="#">Ош</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<ul class="cities_list">
+							<li class="city">
+								<a href="#">Талас</a>
+							</li>
+							<li class="city">
+								<a href="#">Таш-Кумыр</a>
+							</li>
+							<li class="city">
+								<a href="#">Токмак</a>
+							</li>
+							<li class="city">
+								<a href="#">Токтогул</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<ul class="cities_list">
+							<li class="city">
+								<a href="#">Солюкта</a>
+							</li>
+							<li class="city">
+								<a href="#">Узген</a>
+							</li>
+							<li class="button-city">
+								<a href="#" class="all-cities">
+									Все города
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row footer-content">
+
+					<div class="col-sm-3 col-xs-6">
+						<ul class="footer_list">
+							<li class="footer_item">
+								Информация
+							</li>
+							<li class="footer_item">
+								<a href="#">Карта сайта</a>
+							</li>
+							<li class="footer_item">
+								<a href="#">Карта городов</a>
+							</li>
+							<li class="footer_item">
+								<a href="#">Карта организаций</a>
+							</li>
+							<li class="footer_item">
+								<a href="#">Условия пользования</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-sm-3 col-xs-6">
+						<ul class="footer_list">
+							<li class="footer_item">
+								Обратная связь
+							</li>
+							<li class="footer_item">
+								<a href="#">Пожаловаться на рекламу</a>
+							</li>
+							<li class="footer_item">
+								<a href="#">Пожаловаться на модератора</a>
+							</li>
+							<li class="footer_item">
+								<a href="#">Оставь отзыв или предложение</a>
+							</li>
+							<li class="footer_item">
+								<a href="#">Заметили ошибку?</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-sm-3 col-xs-6">
+						<ul class="footer_list">
+							<li class="footer_item">
+								Дополнительно
+							</li>
+							<li class="footer_item">
+								<a href="#">Вакансии у нас</a>
+							</li>
+							<li class="footer_item">
+								<a href="#">Мобильные приложения</a>
+							</li>
+							<li class="footer_item">
+								<a href="#">Победители конкурсов</a>
+							</li>
+							<li class="footer_item">
+								<a href="#">Платные услуги</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-sm-3 col-xs-6">
+						<ul class="footer_list">
+							<li class="footer_item">
+								Внимание!
+							</li>
+							<li class="footer_item copy">
+								Копирование и использование материалов
+								сайта в любом виде  без согласования
+								с администрацией запрещено.  Незаконное
+								использование влечет административную
+								или уголовную ответственность
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="row centered">
+					<div class="col-xs-12 col-sm-3">
+
+					 <div class="footer-add footer-replaced">
+							<a href="#" class="add" >
+								<span class="add-text">Добавить объявление</span>
+								<!-- <span class="add-img">
+									<img src="img/add.png" alt="add">
+								</span> -->
+							</a>
+						</div>
+
+						<div class="counter">
+							<div class="counter_item">
+								2
+							</div>
+							<div class="counter_item">
+								5
+							</div>
+							<div class="counter_item">
+								8
+							</div>
+							<div class="counter_item">
+								9
+							</div>
+							<div class="counter_item">
+								0
+							</div>
+							<div class="counter-text mobile-counter">
+							Просмотров за сегодня
+						</div>
+						</div>
+
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<div class="footer-add footer-desktop">
+							<a href="#" class="add" >
+								<span class="add-text">Добавить объявление</span>
+								<!-- <span class="add-img">
+									<img src="img/add.png" alt="add">
+								</span> -->
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<a href="#">
+							<div class="register">
+								Вход/Регистрация
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<div class="socials">
+							<ul class="social__list">
+									<li>
+										<a href="#">
+											<div class="social insta">
+											<img src="img/svg/insta.svg" alt="">
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="social tw">
+												<img src="img/svg/tw.svg" alt="">
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="social facebook">
+											<img src="img/svg/face.svg" alt="">
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="social skype">
+											<img src="img/svg/skype.svg" alt="">
+											</div>
+										</a>
+									</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row footer-bottom">
+					<div class="col-sm-3 col-xs-12 col-md-4">
+						<div class="counter-text">
+							Просмотров за сегодня
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-5">
+						<div class="creator">
+							Сайт изготовлен студией <span><a href="#">Екатерины Громовой</a></span>
+						</div>
+					</div>
+					<div class="copyright col-sm-4 col-xs-12 col-md-3 col-md-offset-1">
+						&copy;2017 Все права защищены
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+</div>
+
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="bootstrap/bootstrap.js"></script>
+<script src="components/slick-master/slick/slick.js"></script>
+<script src="js/index/script.js"></script>
+</body>
+</html>
